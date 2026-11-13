@@ -159,3 +159,29 @@ After completing this lab, you will:
 ✅ Return structured JSON and meaningful HTTP responses  
 
 This lays the foundation for full CRUD APIs in the next module.
+
+## Product Catalog API
+
+A Flask REST API that retrieves product data and returns JSON responses.
+
+### Endpoints
+
+- `GET /` — Returns a welcome message.
+- `GET /products` — Returns all products.
+- `GET /products/2` — Returns the product with ID 2.
+- `GET /products?category=books` — Returns products in the books category.
+- `GET /products/99` — Returns a JSON error with status 404 because the product does not exist.
+
+### Run the App
+
+```bash
+pipenv run python app.py
+```
+
+### Run Tests
+
+```bash
+pipenv run python -m pytest
+```
+
+All five tests passed. Endpoints were also checked manually in the browser.
